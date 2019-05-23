@@ -9,7 +9,7 @@ export default class ValueConverterGenerator {
     this.ui = ui;
   }
 
-  execute() {
+  execute() { 
     return this.ui
       .ensureAnswer(this.options.args[0], 'What would you like to call the value converter?')
       .then(name => {
